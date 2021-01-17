@@ -1,7 +1,7 @@
 const jsonString = `{
   "first": "Sam",
   "last": "Adams",
-  "email" "sam.adams@company.com",
+  "email": "sam.adams@company.com",
   "role": "Engineering Manager",
   "company": "TechCo.",
   "location": {
