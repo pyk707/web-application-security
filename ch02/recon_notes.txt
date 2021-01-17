@@ -1,0 +1,45 @@
+{
+  api_endpoints: {
+    sign_up: {
+      url: 'mywebsite.com/auth/sign_up',
+      method: 'POST',
+      shape: {
+        username: { type: String, required: true, min: 6, max: 18 },
+        password: { type: String, required: true, min: 6: max 32 },
+        referralCode: { type: String, required: true, min: 64, max: 64 }
+      }
+    },
+    sign_in: {
+      url: 'mywebsite.com/auth/sign_in',
+      method: 'POST',
+      shape: {
+        username: { type: String, required: true, min: 6, max: 18 },
+        password: { type: String, required: true, min: 6: max 32 }
+      }
+    },
+    reset_password: {
+      url: 'mywebsite.com/auth/reset',
+      method: 'POST',
+      shape: {
+        username: { type: String, required: true, min: 6, max: 18 },
+        password: { type: String, required: true, min: 6: max 32 },
+        newPassword: { type: String, required: true, min: 6: max 32 }
+      }
+    }
+  },
+  
+  features: {
+    comments: {},
+    uploads: {
+      file_sharing: {}
+    },
+  },
+  
+  integrations: {
+    oath: {
+      twitter: {},
+      facebook: {},
+      youtube: {}
+    }
+  }
+}

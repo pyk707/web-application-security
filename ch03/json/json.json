@@ -1,0 +1,13 @@
+{
+  "first": "Sam",
+  "last": "Adams",
+  "email": "sam.adams@company.com",
+  "role": "Engineering Manager",
+  "company": "TechCo.",
+  "location": {
+    "country": "USA",
+    "state": "california",
+    "address": "123 main st.",
+    "zip": 98404
+  }
+}

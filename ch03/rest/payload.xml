@@ -1,0 +1,14 @@
+<user>
+  <username>joe</username>
+  <password>correcthorsebatterystaple</password>
+  <email>joe@website.com</email>
+  <joined>12/21/2005</joined>
+  <client-data>
+    <timezone>UTF</timezone>
+    <operating-system>Windows 10</operating-system>
+    <licenses>
+      <videoEditor>abc123-2005</videoEditor>
+      <imageEditor>123-456-789</imageEditor>
+    </licenses>
+  </client-data>
+</user>

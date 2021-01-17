@@ -1,0 +1,14 @@
+{
+  "username": "joe",
+  "password": "correcthorsebatterystaple",
+  "email": "joe@website.com",
+  "joined": "12/21/2005",
+  "client_data": {
+    "timezone": "UTF",
+    "operating_system": "Windows 10",
+    "licenses": {
+      "videoEditor": "abc123-2005",
+      "imageEditor": "123-456-789"
+    }
+  }
+}
